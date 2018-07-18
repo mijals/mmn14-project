@@ -11,6 +11,7 @@ int valid_command(char *);
 int valid_comment(char *);
 
 
+/*aviv*/
 int valid_symbol(char *word, int num) {
     int length = strlen(word);
     char *no_colon;
