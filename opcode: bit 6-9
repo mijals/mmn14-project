@@ -1,0 +1,37 @@
+char[] opcode(char[] command) /*might need an improve*/
+{
+  char[] opcode;
+  if (command == "mov")
+    return "0000";
+  if (command == "cmp")
+    return = "0001";
+  if (command == "add")
+    return = "0010";
+  if (command == "sub")
+    return = "0011";
+  if (command == "not")
+    return = "0100";
+  if (command == "clr")
+    return = "0101";
+  if (command == "lea")
+    return = "0110";
+  if (command == "inc")
+    return "0111";
+  if (command == "dec")
+    return = "1000";
+  if (command == "jmp")
+    return = "1001";
+  if (command == "bne")
+    return = "1010";
+  if (command == "red")
+    return = "1011";
+  if (command == "prn")
+    return = "1100";
+  if (command == "jsr")
+    return = "1101";
+  if (command == "rts")
+    return = "1110";
+  if (command == "stop")
+    return = "1111";
+
+}
