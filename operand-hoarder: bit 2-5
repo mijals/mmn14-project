@@ -1,0 +1,20 @@
+char[] operand(char[] hoarder)
+{
+  if (hoarder == "r0")
+    return "000000";
+  if (hoarder == "r1")
+    return "000001";
+  if (hoarder == "r2")
+    return "000010";
+  if (hoarder == "r3")
+    return "000011";
+  if (hoarder == "r4")
+    return "000100";
+  if (hoarder == "r5")
+    return "000101";
+  if (hoarder == "r6")
+    return "000110";
+  if (hoarder == "r7")
+    return "000111";
+
+}
