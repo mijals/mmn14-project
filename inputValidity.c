@@ -5,6 +5,7 @@
 
 char *commands[] = {"mov", "cmp", "add", "sub", "not", "clr", "lea", "inc",
                     "dec", "jmp", "bne", "red", "prn", "jsr", "rts", "stop"};
+int opcode[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
 
 int valid_symbol(char *, int);
 int valid_command(char *);
