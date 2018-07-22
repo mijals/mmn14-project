@@ -13,6 +13,12 @@ int main(int argc, char *argv[]) {
     for(i = 0; i < argc-1; i++) {
 
     }
+    /*we need to cuntinue the program*/
+    if(get_word == "mov")
+    {
+           
+    }
+    
 }
 
 char **add_as(int count, char **string) {
