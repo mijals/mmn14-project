@@ -4,6 +4,7 @@
 char **add_as(int, char **);
 
 int main(int argc, char *argv[]) {
+    int adress[14];
     int i;
     add_as(argc-1, argv);
     if(argc == 1) {
@@ -13,7 +14,7 @@ int main(int argc, char *argv[]) {
     for(i = 0; i < argc-1; i++) {
 
     }
-    /*we need to cuntinue the program*/
+    /*we need to continue the program*/
     if(get_word == "mov")
     {
            
