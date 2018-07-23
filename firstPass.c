@@ -5,8 +5,6 @@ char **add_as(int, char **);
 
 int main(int argc, char *argv[]) {
     int i;
-    IC = 0;
-    DC = 0;
     add_as(argc-1, argv);
     if(argc == 1) {
         printf("No files were entered.\n");
