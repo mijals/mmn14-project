@@ -5,6 +5,8 @@
 #define line_len 80
 #define command_count 16
 
+enum flag{off, on};
+
 enum bool{false = 0, true};
 int Z = 0;
 
