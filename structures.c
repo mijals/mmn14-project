@@ -26,7 +26,7 @@ typedef struct statements2 {
     int location;
     char *address;
     state next;
-}statement2;
+} statement2;
 
 typedef struct symbols* s;
 typedef struct symbols {
@@ -42,7 +42,7 @@ typedef struct symbols_table_item {
     int address;
     bool is_external;
     bool is_command;
-}
+} symbols_table_item;
 
 
 statement first;
