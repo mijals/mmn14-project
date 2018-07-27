@@ -17,6 +17,12 @@ int main(int argc, char *argv[]) {
     
 }
 
+
+void handle_file(char *file_name) {
+    char **lines = read_file(file_name); 
+    first_pass_info *firstPassInfo = first_pass(lines); //first past info should be definded as a struct
+}
+
 char **add_as(int count, char **string) {
     int i;
     char *word;
