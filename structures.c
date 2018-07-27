@@ -22,14 +22,28 @@ typedef struct statements {
     state next;
 }statement;
 
+typedef struct statements2 {
+    int location;
+    char *address;
+    state next;
+}statement2;
+
 typedef struct symbols* s;
 typedef struct symbols {
     char *name;
     int address;
-    int external;
-    int is_command;
+    int external;//can be modified to bool
+    int is_command;//can be modified to bool
     s next;
 } symbol;
+
+typedef struct symbols_table_item {
+    char *name;
+    int address;
+    bool is_external;
+    bool is_command;
+}
+
 
 statement first;
 symbol head;
