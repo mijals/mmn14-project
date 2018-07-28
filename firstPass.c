@@ -28,7 +28,11 @@ char **read_file(char *file) {
 }
 
 first_pass_info *first_pass(char **file) {
-    
+    first_pass_info info;
+    IC = 0;
+    DC = 0;
+    flag = is_flag_on;
+    return info;
 }
 
 char **add_as(int count, char **string) {
