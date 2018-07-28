@@ -25,8 +25,8 @@ typedef struct statements {
 typedef struct statements2 {
     int location;
     char *address;
-    state next;
-} statement2;
+    typedef struct statements2 *next;
+} statements2;
 
 typedef struct symbols* s;
 typedef struct symbols {
@@ -42,8 +42,14 @@ typedef struct symbols_table_item {
     int address;
     bool is_external;
     bool is_command;
+    typedef struct symbols_table_item *next;
 } symbols_table_item;
 
+typedef struct first_pass_info {
+    symbols_table_item *symbols;
+    statements2 *data;
+    int code;
+} first_pass_info;
 
 statement first;
 symbol head;
