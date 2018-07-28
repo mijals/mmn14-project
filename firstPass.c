@@ -23,6 +23,14 @@ void handle_file(char *file_name) {
     first_pass_info *firstPassInfo = first_pass(lines); //first past info should be definded as a struct
 }
 
+char **read_file(char *file) {
+    
+}
+
+first_pass_info *first_pass(char **file) {
+    
+}
+
 char **add_as(int count, char **string) {
     int i;
     char *word;
