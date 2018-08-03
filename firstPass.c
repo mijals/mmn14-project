@@ -15,6 +15,27 @@ int main(int argc, char *argv[]) {
     }
 }
 
+int *code_instructions(char *line, int word_amount) {
+    char *instruction;
+    int i;
+    for(i = 0; i < 3; i++)
+        instruction[i] = line[i];
+    char first_group[5][3] = {"mov", "cmp", "add", "sub", "lea"};
+    char second_group[9][3] = {"not", "clr", "inc", "dec", "jmp", "bne", "red", "prn", "jsr"};
+    char third_group[2][3] = {"rts", "stop"};
+    for(i = 0; i < 5; i++) 
+        if(strcmp(instruction, first_group[i]) == 0) 
+            return handle_first_group;
+    for(i = 0; i < 9; i++) 
+        if(strcmp(instruction, second_group[i]) == 0) 
+            return handle_second_group;
+    for(i = 0; i < 2; i++) 
+        if(strcmp(instruction, third_group[i]) == 0) 
+            return handle_third_group;
+    return 0;
+}
+
+
 char **add_as(int count, char **string) {
     int i;
     char *word;
